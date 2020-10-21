@@ -29,7 +29,6 @@ github_username:  mrobayo
 
 # Build settings
 #theme: minima
-#remote_theme: "mmistakes/minimal-mistakes@4.16.5"
 #theme: minimal-mistakes-jekyll
 remote_theme: "mmistakes/minimal-mistakes@4.20.2"
 
