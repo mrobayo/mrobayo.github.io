@@ -18,7 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Mario Robayo
+title: Ma Robayo
 email: mrobayo@hotmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Targeting clean coding.
@@ -55,3 +55,10 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+# Custom tags
+subtitle: "Software Developing Experiences & Post Reviews"
+name: "Ma. Robayo"
+logo: assets/images/11372276.png
+masthead_title: "Professional Software engineer & Family Guy"
+teaser: /assets/images/500x300.png
