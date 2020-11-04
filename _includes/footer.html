@@ -17,7 +17,8 @@
 </div>
 
 <div class="page__footer-copyright">
-  &copy; {{ site.time | date: '%Y' }} {{ site.name | default: site.title }}. {{ site.data.ui-text[site.locale].powered_by | default: "Powered by" }}
-  <a href="https://jekyllrb.com" rel="nofollow">Jekyll 2</a> &amp;
-  <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.
+  &copy; {{ site.time | date: '%Y' }} {{ site.name | default: site.title }}.
+  <span class="fuzzy">{{ site.data.ui-text[site.locale].powered_by | default: "Powered by" }}</span>
+  <a href="https://jekyllrb.com" rel="nofollow" class ="fuzzy">Jekyll</a>
+  <span class="fuzzy">&amp; Minimal Mistakes</span>
 </div>

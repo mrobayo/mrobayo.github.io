@@ -13,7 +13,7 @@ twitter_username: MaRobayoAyala
 #theme: minimal-mistakes-jekyll
 remote_theme: "mmistakes/minimal-mistakes@4.20.2"
 
-breadcrumbs: true
+breadcrumbs: false
 timezone: America/Chicago
 
 plugins:
@@ -45,8 +45,8 @@ exclude:
 # Custom tags
 subtitle: "Software Developing Experiences & Post Reviews"
 name: "Mario Robayo"
-logo: /assets/images/11372276.png
-masthead_title: "Professional Software engineer & Family Guy"
+logo: /assets/images/puzzle-icon.png
+masthead_title: "Mario Robayo"
 teaser: /assets/images/coding.png
 
 author:
@@ -86,6 +86,7 @@ defaults:
       type: pages
     values:
       layout: single
+      author_profile: true
   # _posts
   - scope:
       path: ""
