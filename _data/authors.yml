@@ -1,0 +1,12 @@
+
+Mario Robayo:
+  name        : "Mario Robayo"
+  bio         : "."
+  avatar      : ""
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:mrobayo@gmail.com"
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/MaRobayoAyala"

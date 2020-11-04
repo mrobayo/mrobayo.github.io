@@ -1,6 +1,5 @@
 ---
-# Welcome to my comments in Software Engineering & Reviews.
-# 
-
+permalink: /
 layout: home
 ---
+
