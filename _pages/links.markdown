@@ -1,7 +1,7 @@
 ---
 # Links
 # 
-layout: posts
+layout: splash
 permalink: /links/
 title: Interesting Links to SE Pages & other cool stuff    
 ---

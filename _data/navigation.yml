@@ -1,0 +1,18 @@
+# main links
+main:
+  #- title: "Reviews"
+  #  url: /reviews/
+  - title: "About"
+    url: /about/
+  - title: "Useful links"
+    url: /links/
+  # - title: "Sample Collections"
+  #   url: /collection-archive/
+  # - title: "Sitemap"
+  #   url: /sitemap/
+
+sidebar:
+  - title: "Cloud Apps"
+    children:
+      - title: "thesauri.herokuapp.com"
+        url: "https://thesauri.herokuapp.com/"
