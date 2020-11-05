@@ -6,6 +6,8 @@ main:
     url: /about/
   - title: "Useful links"
     url: /links/
+  - title: "Some Books"
+    url: /books/
   # - title: "Sample Collections"
   #   url: /collection-archive/
   # - title: "Sitemap"

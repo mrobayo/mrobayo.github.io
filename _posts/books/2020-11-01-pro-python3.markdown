@@ -1,0 +1,31 @@
+---
+layout: single
+title: Pro Python 3
+date: 2020-11-01 00:00:00 -0500
+categories: books
+---
+
+Pro Python 3 
+Features and Tools for Professional Development
+Third Edition — J. Burton Browning, Marty Alchin
+
+<div class="book_preview">
+<iframe type="text/html" width="336" height="550" frameborder="0" allowfullscreen 
+    style="max-width:100%" 
+    src="https://read.amazon.com/kp/card?asin=B07PQBH4LL&preview=inline&linkCode=kpe&ref_=cm_sw_r_kb_dp_wF3OFb33V7HPC" >
+</iframe>
+</div>
+
+I've found interesting chapters checking Table of Contents:
+ 
+     - Functions
+         - Generators
+         - Closures
+         - Lambdas
+     - Object management
+         - Garbage Collection
+         - Copying
+ 
+ 
+ 
+---
