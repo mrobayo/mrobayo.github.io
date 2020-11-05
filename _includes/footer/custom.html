@@ -1,7 +1,19 @@
 <!-- start custom footer snippets -->
 <div class="footer_snippet">
-    <a href="/assets/images/the_art_of_bug_reporting.jpg">
-        <img src="/assets/images/the_art_of_bug_reporting.jpg" alt="cartoontester.blogspot.co.uk" style="width: 50%">
+    <a href="#">
+        <img id="unsplash-img" alt="thanks unsplash" style="width: 50%"
+             src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==">
     </a>
+    <script>
+        document.addEventListener("DOMContentLoaded", function(){
+            usurl = 'https://source.unsplash.com/collection/63284530/daily';
+            usimg = document.getElementById('unsplash-img');
+            fetch(usurl)
+                .then(function(response) { return response.blob(); })
+                .then(function(blob) {
+                    usimg.src = URL.createObjectURL(blob);
+                    usimg.parentElement.href = usimg.src; });
+                });
+    </script>
 </div>
 <!-- end custom footer snippets -->
