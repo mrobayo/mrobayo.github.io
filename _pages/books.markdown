@@ -14,3 +14,4 @@ worth to mention other books that actually, I read
 only specific chapters.
 
 ---
+<div style="clear: both;"></div>

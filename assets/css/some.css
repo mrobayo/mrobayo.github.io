@@ -13,8 +13,14 @@
    margin: 0 auto;
 }
 
-img[alt=bookshelf]{
+img[alt=bookshelf] {
    float: left;
-   margin: 1em;
+   margin: 0.5em 1em 1em 0;
    width: 136px;
+}
+
+img[alt=se-radio] {
+   float: left;
+   margin: 0.5em 1em 1em 0;
+   width: 196px;
 }
