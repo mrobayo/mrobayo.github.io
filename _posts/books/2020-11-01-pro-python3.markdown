@@ -16,7 +16,8 @@ Third Edition — J. Burton Browning, Marty Alchin
 </iframe>
 </div>
 
-I've found interesting chapters checking Table of Contents:
+---
+I've found some interesting topics, that maybe sounds good to review to other guys.
  
      - Functions
          - Generators

@@ -5,6 +5,7 @@ permalink: /books/
 taxonomy: books
 ---
 
+![bookshelf](/assets/images/bookshelf.png) 
 Thoughts from the Books I've Read that I think are 
 worth sharing. Sometimes, I started a book and left 
 it in the beginning. However, there are a few of 
