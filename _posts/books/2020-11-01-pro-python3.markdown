@@ -5,9 +5,22 @@ date: 2020-11-01 00:00:00 -0500
 categories: books
 ---
 
-Pro Python 3 
+
+Pro Python 3
+------------
+ 
 Features and Tools for Professional Development
 Third Edition — J. Burton Browning, Marty Alchin
+
+
+Table of contents
+=================
+
+   *  [Topics](#topics)
+       *  [Iterators](#iterators)
+       *  [Functions](#functions)
+       *  [Object management](#object-management)
+   *  [Exercises](#exercises)
 
 <div class="book_preview">
 <iframe type="text/html" width="336" height="550" frameborder="0" allowfullscreen 
@@ -17,16 +30,169 @@ Third Edition — J. Burton Browning, Marty Alchin
 </div>
 
 ---
-I've found some interesting topics, that maybe sounds good to review to other guys.
+
+Topics
+------
+
+I've found some interesting topics, that maybe sounds good to review.
  
-     - Functions
-         - Generators
-         - Closures
-         - Lambdas
-     - Object management
-         - Garbage Collection
-         - Copying
+ - Iterators
+     - List comprehensions
+     - Collections
+     - Generators
+ - Functions 
+     - Closures
+     - Lambdas
+ - Object management
+     - Garbage Collection
+     - Copying
+   
+Iterators
+---------
  
+ Examples with List comprehensions, *(try them in your REPL)*
  
+  ``` python
+    # List 
+    [x * y for x in [20, 40, 60] for y in [2, 4, 6]]
+    
+    # Set 
+    {value for value in range(0, 13, 3) if value > 5}
+
+    # Dict
+    {f"a{a}": a*2-1 if a%2==0 else a*3-2 for a in range(1, 10)}
+
+    # Unpacking
+    r = {'Leo': 10, 'Mia': 44} 
+    { **r, 'Sue': 22 }
+
+  ``` 
  
+ With Itertools can do some amazing tricks
+ 
+ ``` python 
+    import itertools
+    list(itertools.chain(range(3), range(4), range(5)))
+    [0, 1, 2, 0, 1, 2, 3, 0, 1, 2, 3, 4]
+
+    list(zip(range(3), reversed(range(5))))
+    [(0, 4), (1, 3), (2, 2)]
+
+    keys = map(chr, range(97, 102))
+    values = range(1, 6)
+    dict(zip(keys, values))
+ ``` 
+
+ Sets Collections
+ 
+ ``` python
+    {1, 3, 5} | {7, 11}
+    {1, 3, 5}.union({7, 11})
+
+    {1, 2, 3} & {3, 4}
+    {1, 2, 3}.intersection({3, 4})
+
+    {1, 2, 3, 4, 5} – {2, 4, 6}
+    {1, 2, 3, 4, 5}.difference({2, 4, 6})
+
+    {1, 2, 3, 4, 5} ^ {4, 5, 6}
+    {1, 2, 3, 4, 5}.symmetric_difference({4, 5, 6})
+
+    {1, 2, 3}.issubset({1, 2, 3, 4, 5})
+    {1, 2, 3, 4, 5}.issubset({1, 2, 3})
+    {1, 2, 3}.issuperset({1, 2, 3, 4, 5})
+
+    not ({1, 2, 3} – {1, 2, 3, 4, 5})
+    True
+    not ({1, 2, 3, 4, 5} – {1, 2, 3})
+    False
+
+ ``` 
+
+ NamedTuples *Collections*
+ ``` python
+     >>> from collections import namedtuple
+     >>> Point = namedtuple('Point', 'x y')
+     >>> point = Point(13, 25)
+     >>> point
+     Point(x=13, y=25)
+     >>> point.x, point.y
+ ``` 
+
+ OrderedDict *Collections* 
+ ``` python
+ from collections import OrderedDict
+ >>> d = OrderedDict((value, str(value)) for value in range(10) if value > 5)
+ ```
+ 
+ Dictionaries with Default
+ ``` python
+ def count_words(text):
+ count = defaultdict(int)
+ for word in text.split(' '):
+ count[word] += 1
+ return count
+
+ ```
+ 
+Functions
+---------
+ 
+ *Arguments*
+  
+ There are only four types of arguments, listed here in the order they generally appear in
+ functions:
+ 
+ - Required arguments
+ - Optional arguments
+ - Variable number of positional arguments
+ - Variable keyword arguments
+ 
+ ``` python
+ def create_element(name, editable=True, *children, **attributes):
+  ``` 
+ #### Introspection
+ 
+ Many of Python’s introspection features are available as part of the standard inspect
+ module, with its getfullargspec() function being of use for function arguments. It
+ accepts the function to be inspected and returns a named tuple of information about
+ that function’s arguments. The returned tuple contains values for every aspect of an
+ argument specification:
+
+ ``` python
+    def example(a=1, b=1, *c, d, e=2, **f) -> str:
+    ... pass
+    ...
+    >>> import inspect
+    >>> inspect.getfullargspec(example)
+    FullArgSpec(args=['a', 'b'], varargs='c', varkw='f', defaults=(1,),
+    kwonlyargs=[
+    'd', 'e'], kwonlydefaults={'e': 2}, annotations={'a': <class 'int'>,
+    'return': <
+    class 'str'>})
+ ``` 
+ #### Decorators
+
+Object management
+----------------- 
+
+// TODO
+
+Exercises
+---------
+A propose simple 2 exercises to review the topics reviewed in this article
+
+
+Exercise #1
+~~~~~~~~~~~
+Using List Comprehension, return a chess board matrix
+
+
+Using Create a function, that has all the features in the of Python 3.   
+
+
+
+ 
+
+
 ---

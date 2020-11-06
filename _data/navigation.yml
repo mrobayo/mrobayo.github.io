@@ -2,14 +2,16 @@
 main:
   #- title: "Reviews"
   #  url: /reviews/
-  - title: "About"
+  - title: "About Me"
     url: /about/
-  - title: "Useful links"
+  - title: "Links"
     url: /links/
-  - title: "Some Books"
+  - title: "Books"
     url: /books/
-  # - title: "Sample Collections"
-  #   url: /collection-archive/
+  - title: "Programming"
+    url: /programming/
+  - title: "Baires"
+    url: /baires/
   # - title: "Sitemap"
   #   url: /sitemap/
 
