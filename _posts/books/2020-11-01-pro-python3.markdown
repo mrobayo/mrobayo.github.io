@@ -3,24 +3,13 @@ layout: single
 title: Pro Python 3
 date: 2020-11-01 00:00:00 -0500
 categories: books
+toc: true
+toc_label: "Table of Contents"
+toc_icon: "bookmark"
 ---
 
-
-Pro Python 3
-------------
- 
-Features and Tools for Professional Development
-Third Edition — J. Burton Browning, Marty Alchin
-
-
-Table of contents
-=================
-
-   *  [Topics](#topics)
-       *  [Iterators](#iterators)
-       *  [Functions](#functions)
-       *  [Object management](#object-management)
-   *  [Exercises](#exercises)
+Highly recommend book to learn Python 3. Here, I've found some 
+interesting topics, that sounds good to me to review. 
 
 <div class="book_preview">
 <iframe type="text/html" width="336" height="550" frameborder="0" allowfullscreen 
@@ -33,19 +22,12 @@ Table of contents
 
 Topics
 ------
-
-I've found some interesting topics, that maybe sounds good to review.
  
  - Iterators
      - List comprehensions
      - Collections
-     - Generators
- - Functions 
-     - Closures
-     - Lambdas
- - Object management
-     - Garbage Collection
-     - Copying
+ - Functions
+     - Arguments  
    
 Iterators
 ---------
@@ -68,7 +50,7 @@ Iterators
 
   ``` 
  
- With Itertools can do some amazing tricks
+ With Itertools, I can do some amazing tricks
  
  ``` python 
     import itertools
@@ -128,68 +110,29 @@ Iterators
  Dictionaries with Default
  ``` python
  def count_words(text):
- count = defaultdict(int)
- for word in text.split(' '):
- count[word] += 1
- return count
+    count = defaultdict(int)
+    for word in text.split(' '):
+    count[word] += 1
+    return count
 
  ```
  
 Functions
 ---------
  
- *Arguments*
+ #### Arguments
   
- There are only four types of arguments, listed here in the order they generally appear in
- functions:
+ There are only four types of arguments, listed here in the 
+ order they generally appear in functions:
  
  - Required arguments
  - Optional arguments
- - Variable number of positional arguments
+ - Arbitrary arguments
  - Variable keyword arguments
  
  ``` python
- def create_element(name, editable=True, *children, **attributes):
-  ``` 
- #### Introspection
- 
- Many of Python’s introspection features are available as part of the standard inspect
- module, with its getfullargspec() function being of use for function arguments. It
- accepts the function to be inspected and returns a named tuple of information about
- that function’s arguments. The returned tuple contains values for every aspect of an
- argument specification:
-
- ``` python
-    def example(a=1, b=1, *c, d, e=2, **f) -> str:
-    ... pass
-    ...
-    >>> import inspect
-    >>> inspect.getfullargspec(example)
-    FullArgSpec(args=['a', 'b'], varargs='c', varkw='f', defaults=(1,),
-    kwonlyargs=[
-    'd', 'e'], kwonlydefaults={'e': 2}, annotations={'a': <class 'int'>,
-    'return': <
-    class 'str'>})
+ def sendmail(email_from, secure_mode=True, *emails_to, **email_options):
  ``` 
- #### Decorators
-
-Object management
------------------ 
-
-// TODO
-
-Exercises
----------
-A propose simple 2 exercises to review the topics reviewed in this article
-
-
-Exercise #1
-~~~~~~~~~~~
-Using List Comprehension, return a chess board matrix
-
-
-Using Create a function, that has all the features in the of Python 3.   
-
 
 
  
