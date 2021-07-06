@@ -13,13 +13,7 @@ This post will cover the following topics:
  - useEffect()
  - forceUpdate()
 
-{% highlight js %}
-
-    const lambda = ({ article }) => {
-        return <h1>{article}</h1>
-    } 
-    #> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
+- - -
 
 ### React.memo() Inside
 
@@ -44,7 +38,17 @@ export default React.memo(BoardPiece, areEqual);
 #### When use React.memo() 
 
 Imagine that you have a big table with hundreds of cells. 
-Like a big appointment scheduler. **React.memo** will help us in this case.
+Like a big scheduler. **React.memo** will help us in this 
+case.
+
+**For instance:** 
+24h Arrival/Departure scheduler with 30 gates and 15m. slots. It will 
+be cucumber if all cells are rendered each time a single cell changes. 
+
+- - -
+
+### useEffect() Inside
+
 
 
 Check out the [ReactJS][ReactJS].
